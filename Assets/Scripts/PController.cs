@@ -20,11 +20,7 @@ public class PController : MonoBehaviour
     private float moveInput;
     private float turnInput;
 
-    private void InputManagement()
-    {
-        moveInput = Input.GetAxis("Vertical");
-        turnInput = Input.GetAxis("Horizontal");
-    }
+
 
 
     // PLAYER STAT VARIABLES
@@ -42,12 +38,6 @@ public class PController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        InputManagement();
-        if(Input.GetKeyDown(KeyCode.Space)) { jump = true; }
-    }
-
-    private void FixedUpdate()
-    {
         // SYSTEM STATE
         switch (state)
         {
@@ -59,6 +49,10 @@ public class PController : MonoBehaviour
 
                 break;
         }
+    }
+
+    private void FixedUpdate()
+    {
     }
 
 
