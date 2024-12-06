@@ -63,12 +63,12 @@ public class PController : MonoBehaviour
                 break;
 
             case Playerstates.GHOST:
-
+                // Will not collide
 
                 break;
 
             case Playerstates.DEAD:
-
+                // Frozen; Darkness; 
 
                 break;
         }
